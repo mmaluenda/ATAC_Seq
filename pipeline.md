@@ -34,7 +34,7 @@ Alinea las lecturas con parámetros específicos para ATAC-seq: -X 2000 permite 
 $ conda activate samtools
 $ ./04_samtools_filter_chrM_grep.sh ../outputs/03_bowtie2
 ```
-Convierte SAM a BAM, elimina los chromosomas y solo mantiene los cromosomas principales, eliminando los mitocondriales (chrM que suelen representar 30-80% en ATAC-seq), ordena por coordenadas e indexa. Prepara los archivos para el filtrado posterior.
+Convierte SAM a BAM, solo mantiene los cromosomas principales, eliminando los mitocondriales (chrM que suelen representar 30-80% en ATAC-seq), ordena por coordenadas e indexa. Prepara los archivos para el filtrado posterior.
 
 + 05 Mark duplicates
 ```bash
